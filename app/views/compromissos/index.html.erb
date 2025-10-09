@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Compromissos" %>
+
+<h1>Compromissos</h1>
+
+<div id="compromissos">
+  <% @compromissos.each do |compromisso| %>
+    <%= render compromisso %>
+    <p>
+      <%= link_to "Show this compromisso", compromisso %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New compromisso", new_compromisso_path %>

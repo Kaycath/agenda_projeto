@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @compromisso %>
+
+<div>
+  <%= link_to "Edit this compromisso", edit_compromisso_path(@compromisso) %> |
+  <%= link_to "Back to compromissos", compromissos_path %>
+
+  <%= button_to "Destroy this compromisso", @compromisso, method: :delete %>
+</div>
